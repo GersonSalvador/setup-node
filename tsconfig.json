@@ -19,8 +19,12 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@controllers/*": ["./src/controllers/*"] //atalhos para importação de arquivos (usar sempre com baseUrl)
+      "@controllers/*": ["./src/controllers/*"], //atalhos para importação de arquivos (usar sempre com baseUrl)
+      "@models": ["./src/models/*"]
       //@controllers, @models, @views, @config
     }
-  }
+  },
+  "include": [
+    "src/**/*"
+  ]
 }
